@@ -15915,9 +15915,21 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <part name="R21" library="rcl" deviceset="R-EU_" device="0204/2V" value="100k"/>
 <part name="R22" library="rcl" deviceset="R-EU_" device="0204/2V" value="10r"/>
 <part name="T2" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="2N3904" value="BC817"/>
-<part name="JP16" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
 <part name="R37" library="rcl" deviceset="R-EU_" device="0204/2V" value="10r"/>
 <part name="R42" library="rcl" deviceset="R-EU_" device="0204/2V" value="100k"/>
+<part name="JP16" library="SparkFun-Connectors" deviceset="M02" device="LOCK"/>
+<part name="T1" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="2N3904" value="BC817"/>
+<part name="R23" library="rcl" deviceset="R-EU_" device="0204/2V" value="10r"/>
+<part name="R24" library="rcl" deviceset="R-EU_" device="0204/2V" value="100k"/>
+<part name="JP17" library="SparkFun-Connectors" deviceset="M02" device="LOCK"/>
+<part name="ZMX" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
+<part name="ZMN" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
+<part name="YMX" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
+<part name="YMN" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
+<part name="XMX" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
+<part name="XMN" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
+<part name="X7" library="con-phoenix-508" deviceset="MSTBA2" device=""/>
+<part name="JP18" library="SparkFun-Connectors" deviceset="M02" device="LOCK"/>
 </parts>
 <sheets>
 <sheet>
@@ -15946,6 +15958,13 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <instance part="EXP2" gate="-8" x="284.48" y="121.92" rot="MR180"/>
 <instance part="EXP2" gate="-9" x="284.48" y="124.46" rot="MR180"/>
 <instance part="EXP2" gate="-10" x="284.48" y="127" rot="MR180"/>
+<instance part="ZMX" gate="G$1" x="287.02" y="226.06"/>
+<instance part="ZMN" gate="G$1" x="287.02" y="210.82"/>
+<instance part="YMX" gate="G$1" x="287.02" y="195.58"/>
+<instance part="YMN" gate="G$1" x="287.02" y="180.34"/>
+<instance part="XMX" gate="G$1" x="287.02" y="165.1"/>
+<instance part="XMN" gate="G$1" x="287.02" y="149.86"/>
+<instance part="JP18" gate="G$1" x="182.88" y="228.6"/>
 </instances>
 <busses>
 </busses>
@@ -16071,6 +16090,36 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <pinref part="EXP2" gate="-9" pin="KL"/>
 <wire x1="289.56" y1="124.46" x2="292.1" y2="124.46" width="0.1524" layer="91"/>
 <label x="292.1" y="124.46" size="1.778" layer="95" rot="MR180"/>
+</segment>
+<segment>
+<pinref part="ZMX" gate="G$1" pin="2"/>
+<wire x1="294.64" y1="226.06" x2="304.8" y2="226.06" width="0.1524" layer="91"/>
+<label x="297.18" y="226.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ZMN" gate="G$1" pin="2"/>
+<wire x1="294.64" y1="210.82" x2="304.8" y2="210.82" width="0.1524" layer="91"/>
+<label x="297.18" y="210.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="YMX" gate="G$1" pin="2"/>
+<wire x1="294.64" y1="195.58" x2="304.8" y2="195.58" width="0.1524" layer="91"/>
+<label x="297.18" y="195.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="YMN" gate="G$1" pin="2"/>
+<wire x1="294.64" y1="180.34" x2="304.8" y2="180.34" width="0.1524" layer="91"/>
+<label x="297.18" y="180.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="XMX" gate="G$1" pin="2"/>
+<wire x1="294.64" y1="165.1" x2="304.8" y2="165.1" width="0.1524" layer="91"/>
+<label x="297.18" y="165.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="XMN" gate="G$1" pin="2"/>
+<wire x1="294.64" y1="149.86" x2="304.8" y2="149.86" width="0.1524" layer="91"/>
+<label x="297.18" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -16218,6 +16267,36 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <wire x1="139.7" y1="144.78" x2="139.7" y2="175.26" width="0.1524" layer="91"/>
 <label x="139.7" y="154.94" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="ZMX" gate="G$1" pin="1"/>
+<wire x1="294.64" y1="223.52" x2="304.8" y2="223.52" width="0.1524" layer="91"/>
+<label x="297.18" y="223.52" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ZMN" gate="G$1" pin="1"/>
+<wire x1="294.64" y1="208.28" x2="304.8" y2="208.28" width="0.1524" layer="91"/>
+<label x="297.18" y="208.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="YMX" gate="G$1" pin="1"/>
+<wire x1="294.64" y1="193.04" x2="304.8" y2="193.04" width="0.1524" layer="91"/>
+<label x="297.18" y="193.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="YMN" gate="G$1" pin="1"/>
+<wire x1="294.64" y1="177.8" x2="304.8" y2="177.8" width="0.1524" layer="91"/>
+<label x="297.18" y="177.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="XMX" gate="G$1" pin="1"/>
+<wire x1="294.64" y1="162.56" x2="304.8" y2="162.56" width="0.1524" layer="91"/>
+<label x="297.18" y="162.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="XMN" gate="G$1" pin="1"/>
+<wire x1="294.64" y1="147.32" x2="304.8" y2="147.32" width="0.1524" layer="91"/>
+<label x="297.18" y="147.32" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="BUZZER-RRD" class="0">
 <segment>
@@ -16255,102 +16334,156 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <label x="88.9" y="170.18" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="P1_22-3RD-SMALL-FET" class="0">
+<net name="P1_22-3RD-SMALL-FET" class="1">
 <segment>
 <pinref part="U$1" gate="G$1" pin="P1_22-3RD-SMALL-FET"/>
 <wire x1="93.98" y1="144.78" x2="93.98" y2="175.26" width="0.1524" layer="91"/>
 <label x="93.98" y="170.18" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="P1_23-3RD-LARGE-FET" class="0">
+<net name="P1_23-3RD-LARGE-FET" class="1">
 <segment>
 <pinref part="U$1" gate="G$1" pin="P1_23-3RD-LARGE-FET"/>
 <wire x1="99.06" y1="144.78" x2="99.06" y2="175.26" width="0.1524" layer="91"/>
 <label x="99.06" y="170.18" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$52" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="X_MIN"/>
-<wire x1="167.64" y1="134.62" x2="198.12" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$53" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="X_MAX"/>
-<wire x1="167.64" y1="129.54" x2="198.12" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$54" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="Y_MIN"/>
-<wire x1="167.64" y1="124.46" x2="198.12" y2="124.46" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$55" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="Y_MAX"/>
-<wire x1="167.64" y1="119.38" x2="198.12" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$56" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="Z_MIN"/>
-<wire x1="167.64" y1="114.3" x2="198.12" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$57" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="Z_MAX"/>
-<wire x1="167.64" y1="109.22" x2="198.12" y2="109.22" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="AVCC" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="AVCC"/>
 <wire x1="167.64" y1="101.6" x2="198.12" y2="101.6" width="0.1524" layer="91"/>
+<label x="187.96" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TH1_HOTEND" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="TH1_HOTEND"/>
 <wire x1="167.64" y1="96.52" x2="198.12" y2="96.52" width="0.1524" layer="91"/>
+<label x="187.96" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TH2_BED" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="TH2_BED"/>
 <wire x1="167.64" y1="91.44" x2="198.12" y2="91.44" width="0.1524" layer="91"/>
+<label x="187.96" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TH3" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="TH3"/>
 <wire x1="167.64" y1="86.36" x2="198.12" y2="86.36" width="0.1524" layer="91"/>
+<label x="187.96" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TH4" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="TH4"/>
 <wire x1="167.64" y1="81.28" x2="198.12" y2="81.28" width="0.1524" layer="91"/>
+<label x="187.96" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AGND" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="AGND"/>
 <wire x1="167.64" y1="76.2" x2="198.12" y2="76.2" width="0.1524" layer="91"/>
+<label x="187.96" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$64" class="0">
+<net name="RX_0" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="RX_0"/>
 <wire x1="167.64" y1="68.58" x2="198.12" y2="68.58" width="0.1524" layer="91"/>
+<label x="187.96" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="190.5" y1="231.14" x2="220.98" y2="231.14" width="0.1524" layer="91"/>
+<label x="210.82" y="231.14" size="1.778" layer="95"/>
+<pinref part="JP18" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$65" class="0">
+<net name="TX_0" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="TX_0"/>
 <wire x1="167.64" y1="63.5" x2="198.12" y2="63.5" width="0.1524" layer="91"/>
+<label x="187.96" y="63.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="190.5" y1="228.6" x2="220.98" y2="228.6" width="0.1524" layer="91"/>
+<label x="210.82" y="228.6" size="1.778" layer="95"/>
+<pinref part="JP18" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="X_MAX" class="0">
+<segment>
+<label x="326.39" y="167.64" size="1.778" layer="95" rot="R180"/>
+<wire x1="328.93" y1="167.64" x2="294.64" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="XMX" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="X_MAX"/>
+<wire x1="167.64" y1="129.54" x2="198.12" y2="129.54" width="0.1524" layer="91"/>
+<label x="187.96" y="129.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="X_MIN" class="0">
+<segment>
+<label x="326.39" y="152.4" size="1.778" layer="95" rot="R180"/>
+<wire x1="328.93" y1="152.4" x2="294.64" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="XMN" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="X_MIN"/>
+<wire x1="167.64" y1="134.62" x2="198.12" y2="134.62" width="0.1524" layer="91"/>
+<label x="187.96" y="134.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="Y_MAX" class="0">
+<segment>
+<label x="326.39" y="198.12" size="1.778" layer="95" rot="R180"/>
+<wire x1="328.93" y1="198.12" x2="294.64" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="YMX" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="Y_MAX"/>
+<wire x1="167.64" y1="119.38" x2="198.12" y2="119.38" width="0.1524" layer="91"/>
+<label x="187.96" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="Z_MIN" class="0">
+<segment>
+<label x="326.39" y="213.36" size="1.778" layer="95" rot="R180"/>
+<wire x1="328.93" y1="213.36" x2="294.64" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="ZMN" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="Z_MIN"/>
+<wire x1="167.64" y1="114.3" x2="198.12" y2="114.3" width="0.1524" layer="91"/>
+<label x="187.96" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="Z_MAX" class="0">
+<segment>
+<label x="326.39" y="228.6" size="1.778" layer="95" rot="R180"/>
+<wire x1="328.93" y1="228.6" x2="294.64" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="ZMX" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="Z_MAX"/>
+<wire x1="167.64" y1="109.22" x2="198.12" y2="109.22" width="0.1524" layer="91"/>
+<label x="187.96" y="109.22" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="Y_MIN" class="0">
+<segment>
+<label x="326.39" y="182.88" size="1.778" layer="95" rot="R180"/>
+<wire x1="328.93" y1="182.88" x2="294.64" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="YMN" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="Y_MIN"/>
+<wire x1="167.64" y1="124.46" x2="198.12" y2="124.46" width="0.1524" layer="91"/>
+<label x="187.96" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -17229,9 +17362,15 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <instance part="R21" gate="G$1" x="223.52" y="162.56"/>
 <instance part="R22" gate="G$1" x="215.9" y="167.64"/>
 <instance part="T2" gate="G$1" x="157.48" y="104.14"/>
-<instance part="JP16" gate="G$1" x="185.42" y="116.84" rot="R180"/>
 <instance part="R37" gate="G$1" x="137.16" y="104.14"/>
 <instance part="R42" gate="G$1" x="152.4" y="96.52" rot="R180"/>
+<instance part="JP16" gate="G$1" x="185.42" y="119.38" rot="R180"/>
+<instance part="T1" gate="G$1" x="157.48" y="60.96"/>
+<instance part="R23" gate="G$1" x="137.16" y="60.96"/>
+<instance part="R24" gate="G$1" x="152.4" y="53.34" rot="R180"/>
+<instance part="JP17" gate="G$1" x="185.42" y="76.2" rot="R180"/>
+<instance part="X7" gate="-1" x="142.24" y="223.52"/>
+<instance part="X7" gate="-2" x="142.24" y="213.36"/>
 </instances>
 <busses>
 </busses>
@@ -17388,6 +17527,20 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <junction x="160.02" y="96.52"/>
 <label x="160.02" y="91.44" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="T1" gate="G$1" pin="E"/>
+<wire x1="160.02" y1="48.26" x2="160.02" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="R24" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="53.34" x2="160.02" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="53.34" x2="160.02" y2="53.34" width="0.1524" layer="91"/>
+<junction x="160.02" y="53.34"/>
+<label x="160.02" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="175.26" y1="213.36" x2="147.32" y2="213.36" width="0.1524" layer="91"/>
+<label x="160.02" y="213.36" size="1.778" layer="95"/>
+<pinref part="X7" gate="-2" pin="1"/>
+</segment>
 </net>
 <net name="12V1" class="0">
 <segment>
@@ -17404,11 +17557,6 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <wire x1="106.68" y1="198.12" x2="88.9" y2="198.12" width="0.1524" layer="91"/>
 <label x="101.6" y="198.12" size="1.778" layer="95"/>
 <pinref part="X4" gate="-1" pin="1"/>
-</segment>
-<segment>
-<wire x1="170.18" y1="198.12" x2="152.4" y2="198.12" width="0.1524" layer="91"/>
-<label x="165.1" y="198.12" size="1.778" layer="95"/>
-<pinref part="X5" gate="-1" pin="1"/>
 </segment>
 <segment>
 <wire x1="233.68" y1="198.12" x2="215.9" y2="198.12" width="0.1524" layer="91"/>
@@ -17469,11 +17617,6 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <pinref part="R15" gate="G$1" pin="1"/>
 <pinref part="R16" gate="G$1" pin="1"/>
 </segment>
-<segment>
-<pinref part="R37" gate="G$1" pin="1"/>
-<wire x1="132.08" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
-<label x="111.76" y="104.14" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="N$49" class="0">
 <segment>
@@ -17531,26 +17674,32 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 </net>
 <net name="5V" class="0">
 <segment>
-<pinref part="JP16" gate="G$1" pin="3"/>
 <wire x1="177.8" y1="114.3" x2="167.64" y2="114.3" width="0.1524" layer="91"/>
 <label x="167.64" y="111.76" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="24V" class="0">
 <segment>
-<pinref part="JP16" gate="G$1" pin="1"/>
+<wire x1="177.8" y1="71.12" x2="167.64" y2="71.12" width="0.1524" layer="91"/>
+<label x="167.64" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="12V" class="0">
+<segment>
 <wire x1="177.8" y1="119.38" x2="160.02" y2="119.38" width="0.1524" layer="91"/>
 <label x="160.02" y="119.38" size="1.778" layer="95"/>
+<pinref part="JP16" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<wire x1="177.8" y1="76.2" x2="160.02" y2="76.2" width="0.1524" layer="91"/>
+<label x="160.02" y="76.2" size="1.778" layer="95"/>
+<pinref part="JP17" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$60" class="0">
 <segment>
 <pinref part="T2" gate="G$1" pin="C"/>
-<wire x1="160.02" y1="109.22" x2="160.02" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="JP16" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="111.76" x2="160.02" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="109.22" x2="160.02" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="116.84" x2="160.02" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="116.84" x2="160.02" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="JP16" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$61" class="0">
@@ -17563,6 +17712,52 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <wire x1="144.78" y1="104.14" x2="154.94" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="96.52" x2="144.78" y2="104.14" width="0.1524" layer="91"/>
 <junction x="144.78" y="104.14"/>
+</segment>
+</net>
+<net name="P1_23-3RD-LARGE-FET" class="1">
+<segment>
+<pinref part="R37" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="104.14" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
+<label x="104.14" y="104.14" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$62" class="0">
+<segment>
+<pinref part="T1" gate="G$1" pin="C"/>
+<wire x1="160.02" y1="66.04" x2="160.02" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="73.66" x2="160.02" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="JP17" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$63" class="0">
+<segment>
+<pinref part="R24" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="53.34" x2="144.78" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="R23" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="60.96" x2="144.78" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="T1" gate="G$1" pin="B"/>
+<wire x1="144.78" y1="60.96" x2="154.94" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="53.34" x2="144.78" y2="60.96" width="0.1524" layer="91"/>
+<junction x="144.78" y="60.96"/>
+</segment>
+</net>
+<net name="P1_22-3RD-SMALL-FET" class="1">
+<segment>
+<pinref part="R23" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="60.96" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
+<label x="104.14" y="60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="12V2" class="0">
+<segment>
+<wire x1="175.26" y1="223.52" x2="147.32" y2="223.52" width="0.1524" layer="91"/>
+<label x="160.02" y="223.52" size="1.778" layer="95"/>
+<pinref part="X7" gate="-1" pin="1"/>
+</segment>
+<segment>
+<wire x1="170.18" y1="198.12" x2="152.4" y2="198.12" width="0.1524" layer="91"/>
+<label x="165.1" y="198.12" size="1.778" layer="95"/>
+<pinref part="X5" gate="-1" pin="1"/>
 </segment>
 </net>
 </nets>
